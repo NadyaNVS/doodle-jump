@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  font: 40px sans-serif;
+}
+
+.grid {
+  width: 500px;
+  height: 700px;
+  background: #ccc url("background.png");
+  background-attachment: local; /* можно убрать, чтобы фон оставался на месте */
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.doodler {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: url("doodle.png") no-repeat;
+  background-size: 100px 100px;
+  /* z-index: 1; */
+  /* top: -100px; */
+  /* left: 0; */
+}
+
+.platform {
+  position: absolute;
+  width: 114px;
+  height: 29px;
+  background-image: url("platform.png");
+}
